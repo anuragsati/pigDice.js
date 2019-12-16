@@ -18,13 +18,63 @@
 </head>
 <body>
     <div class="container-fluid d-flex justify-content-center align-items-center h-100 mainContainer">
-        <div class="container w-75 p-0 rounded d-flex flex-column" style="background-color: #f6f6f3; height:600px; box-shadow: 5px 5px 15px rgba(0,0,0,0.3), -5px -5px 15px rgba(0,0,0,0.3); text-align: center;">
-            <div class="container bg-dark d-flex justify-content-center align-items-center" style="height: 15%;">
-                <i class="fa fa-stop-circle pr-2" aria-hidden="true" style="font-size:xx-large;"></i>
+        <div class="container w-75 p-0 rounded d-flex flex-column" style="background-color: #e6ece8; height:600px; box-shadow: 5px 5px 15px rgba(0,0,0,0.3), -5px -5px 15px rgba(0,0,0,0.3); text-align: center;">
+          
+            <div class="container d-flex justify-content-center align-items-center" style="height: 15%;">
+                <i class="fa fa-plus-square pr-2" aria-hidden="true" style="font-size:xx-large;"></i>
                 <span>NEW GAME</span>
             </div>
-            <div class="container bg-success" style="height: 50%;">dd</div>
-            <div class="container bg-primary" style="height: 35%">ddd</div>
+
+            <div class="container" style="height: 50%;">
+                <div class="row h-100">
+                    <div class="col py-5">                <!--player 1-->
+                        <div class="playerName h-25 h1">PLAYER 1</div>
+                        <div class="playerScore h1 mt-4">0</div>
+                    </div>
+                    <div class="col h1 d-flex justify-content-center align-items-center">0</div>
+                    <div class="col py-5">               <!--player 2-->
+                        <div class="playerName h-25 h1">PLAYER 2</div>
+                        <div class="playerScore h1 mt-4">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" style="height: 35%;">
+                <div class="row h-100">
+                    <div class="col playerOneTemp pt-4" >
+                        <div class="container bg-danger w-50 h-50 pt-2" >
+                            <div class="col h-25 h6">playerScore</div>
+                            <div class="w-100"></div>
+                            <div class="col mt-2 h3">0</div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 controls pt-4">
+                        <div class="container p-0" >
+                            <div class="col h4 mb-4"> 
+                                <i class="fa fa-refresh pr-1" aria-hidden="true" style="font-size:x-large;"></i>
+                                ROLL DICE
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col h4">
+                                <i class="fa fa-stop-circle pr-1" aria-hidden="true" style="font-size:x-large;"></i>
+                                HOLD
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col playerTwoTemp pt-4">
+                        <div class="container bg-danger w-50 h-50 pt-2" >
+                            <div class="col h-25 h6">
+                                
+                                playerScore
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col mt-2 h3">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
